@@ -1,0 +1,446 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-weight: 300;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*
+    Header
+*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header.sticky
+{
+   background: #fff;
+   padding: 25px 100px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+} */
+header.sticky > a{
+    color: black;
+}
+
+header.sticky .nav-link ul li a{
+    color: black;
+    font-weight: 400;
+}
+header.sticky .nav-link ul li a:hover{
+    color: brown;
+    border-bottom: 2px solid orange;
+}
+
+.nav-link{
+    position: relative;
+    display:flex;
+    justify-content: space-between; 
+}
+
+header  > a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight:600;
+}
+header .dot{
+    color: #ff0157;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding: 2px 10px;
+}
+.nav-link ul li a:hover{
+   color: brown;
+}
+
+.bg{
+    position: relative;
+    background: url(/img/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg .para-section{
+    max-width: 900px;
+    text-align: center;
+}
+
+.bg .para-section h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.bg .para-section p{
+    color: white;
+    margin-bottom: 20px;
+}
+.bg .para-section .btn{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: #ff0157;
+    text-align: center;
+}
+
+
+/*
+
+ about section
+
+*/
+
+.about-section{
+    padding: 100px;
+}
+.about-section .row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .about-section-paragraph{
+    width: 48%;
+    margin-right: 2%;
+}
+.row .about-section-paragraph h2::first-letter {
+    font-size: 2.8rem;
+    color: #ff0157;
+    font-weight: 600;
+  }
+.row .about-section-paragraph p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.row .about-section-paragraph #p-margin{
+    margin-bottom: 20px;
+}
+.row .about-section-image{
+    position: relative;
+    width: 50%;
+}
+.about-section-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*
+
+ Menu section
+
+*/
+.menu{
+    padding:  100px 180px;
+}
+.menu-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-heading .span{
+   font-size: 28px;
+   font-weight: 300;
+}
+.menu  .menu-heading .first-letter{
+    font-size: 2.4rem;
+    color: #ff0157;
+    font-weight: 600;
+}
+.menu .content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.menu .content .box{
+  width: 400px;
+  margin: 20px;
+  border: 15px solid #fff;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .content .box .imgbox{
+    position: relative;
+    width: 100%;
+    height: 300px; 
+}
+
+.menu .content .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.menu .content .txt{
+    box-sizing: none;
+    padding: 10px 0;
+}
+.menu-footer{
+text-align: center;
+}
+.menu-footer a{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: #ff0157;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 400;
+}
+
+/*
+    expert
+*/
+.expert{
+    padding:  100px 160px;
+}
+.expert .expert-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.expert-heading .span{
+    font-size: 28px;
+    font-weight: 300;
+ }
+ .expert  .expert-heading .first-letter{
+    font-size: 2.4rem;
+    color: #ff0157;
+    font-weight: 600;
+}
+ .expert .content{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+ }
+ .expert .content .box{
+     width: 280px;
+     margin: 20px;
+ }
+ .expert .content .box .imgbox{
+     position: relative;
+     width: 100%;
+     height: 300px;
+ }
+ .expert .content .box .imgbox img{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 0;
+     top: 0;
+     object-fit: cover;
+ }
+ .expert .content .box  .txt{
+     font-size: 18px;
+     word-spacing: 4px;
+     padding: 20px 0;
+ }
+
+
+
+ /*
+    comment
+ */
+
+
+ .comment{
+     width: 100%;
+     background: url(/img/bg2.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding: 80px;
+
+ }
+ .comment .commnet-heading{
+     position: relative;
+     margin-top: 20px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 35px;
+ }
+ .comment .commnet-heading .span{
+     text-align: center;
+     font-size: 32px;
+     color: white;
+ }
+ .comment .commnet-heading  .first-letter{
+    font-size: 3rem;
+    color: #ff0157;
+    font-weight: 600;
+ }
+ .comment .commnet-heading .pp{
+     text-align: center;
+    color: white;
+    font-size: 17px;
+}
+.comment  .content{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+.comment  .content .box{
+    padding: 20px 30px;
+    width: 350px;
+    margin: 20px;
+    background: white;
+   
+}
+.comment  .content .box .imgbox{
+    position: relative;
+    width: 100%;
+    height: 130px;
+}
+.comment  .content .box .imgbox img{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    border-radius: 50%; 
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.comment  .content .box .txt{
+    text-align: center;
+    word-spacing: 5px;
+    font-weight: 500;
+    color: #666;
+}
+.comment  .content .box .txt h3{
+    box-sizing: border-box;
+   color: #ff0157;
+   font-size: 16px;
+   padding: 20px;
+   font-weight: 600;
+}
+
+
+.contact{
+    width: 100%;
+    background: url(/img/bg3.jpg);
+    background-size: cover;
+}
+.contact .contact-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.contact .contact-heading .span{
+    text-align: center;
+    font-size: 32px;
+    color:black;
+}
+.contact .contact-heading  .first-letter{
+   font-size: 3rem;
+   color: #ff0157;
+   font-weight: 600;
+}
+.contact .contact-heading .pp{
+    text-align: center;
+   color: black;
+   font-size: 17px;
+}
+.contact .content {
+    margin-left: 90px;
+    margin-top: 90px;
+}
+.contact .content .content-form{
+    max-width: 500px;
+    max-height: 600px;
+    padding: 130px 50px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.contact .content .content-form .name{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(49, 49, 49);
+}
+.contact .content .content-form .email{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(49, 49, 49);
+}
+.contact .content .content-form .description{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(49, 49, 49);
+    margin-bottom: 40px;
+}
+.contact .content .content-form .button{
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+    background-color:#ff0157;
+}
+.contact .content .content-form  p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+
+.copywrite
+{
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.copywrite p
+{
+  color: rgb(66, 64, 64);
+}
+.copywrite a
+{
+  color: #ff0157;
+  font-weight: 500;
+  text-decoration: none;
+}

@@ -1,0 +1,108 @@
+@media only screen and (max-width: 1000px) {
+  header
+  {
+    padding: 23px 20px;
+  }  
+     header .nav-link
+    {
+      display: none;
+    }
+
+    /* menu bar sign setup in menutoggle*/
+    .menuToggle
+    {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: url(/img/menu.png);
+      background-size: 30px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+    }
+    /* when active the menu bar show that display*/
+    .nav-link.active
+    {
+      width: 100%;
+      height: calc(100% - 98px);
+      position: fixed;
+      top: 98px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+    header .nav-link li
+    {
+      margin-left: 0;
+    }
+    header .nav-link li a
+    {
+      color: #111;
+      font-size: 1.6em;
+    }
+    
+    .menuToggle.active
+    {
+      background: url(/img/close.png);
+      background-size: 25px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    header.sticky .menuToggle
+    {
+      filter: invert(1);
+    }
+    .bg .para-section h2{
+      font-size: 2rem;
+    } 
+  .bg .para-section p{
+    margin-bottom: 16px;
+}
+    .about-section{
+      padding: 30px;
+    }
+    .about-section .row{
+     flex-direction: column;
+  }
+  .row .about-section-paragraph{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .row .about-section-image{
+    width: 100%;
+  }
+  .about-section-image img{
+    height: 300px;
+  }
+
+  .menu{
+    margin-top: 210px;
+    padding: 90px 60px;
+   }
+
+
+   .contact .content {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.contact .content .content-form{
+    padding: 30px 10px;
+  }
+}
+  @media only screen and (max-width: 532px){
+    .menu{
+      padding:  20px;
+    }
+    .expert{
+      padding:  15px 20px;
+  }
+    .comment{
+      padding: 20px;
+   }
+  }
+  
+    
+  
